@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,200;1,300&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header{
+    background-color: rgb(6, 1, 70);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+.logo{
+    text-decoration: none;
+    color: rgb(43, 179, 233);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+.navigation a{
+    color: rgb(180, 166, 194);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    padding-left: 30px;
+}
+.navigation a:hover{
+    color: rgb(14, 80, 221);
+    
+}
+section{
+    padding: 100px 200px;
+
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(imges/n.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main h2{
+    color: rgb(180, 166, 194);
+    font-weight: 500;
+    font-size: 1.4em;
+}
+.main h2 span{
+    display: inline-block;
+    margin-top: 10px;
+    color: rgb(180, 166, 194);
+    font-weight: 600;
+    font-size: 3em;
+}
+.main h3 {
+    display: inline-block;
+    color: rgb(180, 166, 194);
+    font-weight: 700;
+    font-size: 2em;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.main-btn {
+    display: inline-block;
+    color: rgb(180, 166, 194);
+    background-color: rgb(48, 27, 68);
+    font-weight: 600;
+    font-size: 1.1em;
+   text-decoration: none;
+   padding: 0.9375em 2.1875em;
+   letter-spacing: 1px;
+   border-radius: 20px;
+   margin-bottom: 45px;
+   transition: 0.7s ease;
+}
+.main-btn:hover{
+    background-color: rgba(54, 73, 114, 0.747);
+    transform: scale(1.1);
+    color:rgb(14, 80, 221) ;
+}
+.social-icons{
+    
+    color: rgb(218, 204, 231);
+    font-size: 1.7em;
+    padding: right 50px;
+
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: rgb(143, 66, 216);
+    font-weight: 800;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+
+}
+.content{
+   display: flex;
+  justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card {
+    color: rgb(143, 66, 216);
+    background-color: rgb(201, 177, 223);
+   width: 20.25em ;
+   box-shadow: 0 5px 25px rebeccapurple;
+   border-radius: 10px;
+   padding: 25px;
+   margin: 15px;
+}
+.card:hover{
+    transform: scale(1.1);
+    color:rgb(14, 80, 221) ;
+    transition: 0.7s ease;
+}
+.icon {
+    
+    font-size: 8em;
+    text-align: center;
+}
+
+.info{
+    text-align: center;
+}
+.info h3 {
+    color: rgb(143, 66, 216);
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.projects {
+    background-color:rgb(42, 30, 56); ;
+}
+.projects .content{
+    margin-top: 30px;
+}
+.projects-card{
+    background-color: rgb(223, 201, 245);
+    border: 1px solid rgb(223, 201, 245);
+    min-height: 14em;
+    width:20em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+
+}
+.projects-card:hover{
+    transform: scale(1.1);
+}
+.projects-card:hover .projects-image{
+    opacity: 0.9;
+}
+.projects-image image{
+    width: 100%;
+}
+.projects-info {
+    padding: 1em;
+   
+}
+.projects-category{
+    font-size: 0.8em;
+    color:  rgb(143, 66, 216);
+
+}
+.projects-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+.more-details {
+    text-decoration: none;
+    color:  rgb(143, 66, 216);
+
+}
+.more-details:hover{
+
+    color:rgb(14, 80, 221) ;
+   
+}
+.content .info p {
+    font-size: 1.1em;
+}
+.footer{
+    background-color: rgb(6, 1, 70);
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-title{
+    color:  rgb(43, 179, 233) ;
+}
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+    .navigation a{
+        padding-left: 10px;
+    }
+    .title{
+          font-size: 1.8em;
+    }
+    section{
+        padding:800 20;
+    }
+    .mainc-ontent h2{
+        font-size: 1me;
+    }
+    .main-content h3 {
+        font-size: 1.6em;
+    }
+    .content{
+       
+        align-items: center;
+    }
+}
+@media (max-width:641px){
+font-size: 0.8em;
+}
